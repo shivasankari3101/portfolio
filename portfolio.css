@@ -76,14 +76,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+h1{
+    color: #ff4893;
+}
 #intro{
     padding-left: 5%;
 }
 
 #intro h1{
     font-size: 4rem;
-    color: #ff4893;
 }
 
 #intro p{
@@ -105,9 +106,6 @@ body{
     align-items: center;
 }
 
-#aboutme h1{
-    color: #ff4893;
-}
 
 #aboutme p{
     font-size: 1.5rem;
@@ -118,27 +116,48 @@ body{
 #skills{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: 5%;
 }
-
-#skills h1{
-   color: #ff4893;
-}
-
 #board{
-    display: grid;
-    grid-template-columns: 20% 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-#skill_names,#bars{
+#board>div{
     display: grid;
-    grid-gap:10%;
+    grid-template-columns: 18% 60%;
 }
 
 .bar{
-  height: 2vh;
-  background-color: black;
+    width: 100%;
+    height: 4vh;
+    background-color: #ffd5d5;
+    border-radius: 10px;
 }
+
+.skill{
+    border-radius: 10px;
+    height: 100%; 
+    background-color: #ff4893;
+    text-align:right;
+    color: #fff;
+    padding-right: 3%;
+}
+
+.skill_name{
+    color: #45454d;
+    line-height: 1.2em;
+}
+
+.html{width: 95%;}
+.css{width:90%}
+.js{width:60%}
+.jquery{width:60%}
+.react{width:30%}
+.node{width:40%}
+.mysql{width: 90%;}
+
 
 @media screen and (max-width:768px){
     #sidebar{
@@ -147,5 +166,18 @@ body{
     #main_content{
         left: 0;
         width: 100vw;
+    }
+    #home{
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 50%;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+    #intro h1{
+        font-size: 3rem;
+    }
+    #intro p{
+        font-size: 1.5rem;
     }
 }
