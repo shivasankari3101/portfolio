@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="sidebar">
+            <ul id="menu">
+                <li onclick="showhome()"><div><i class="fa fa-home fa-2x" aria-hidden="true"></i></div><div>Home</div></li>
+                <li onclick="showabout()"><div><i class="fa fa-user fa-2x" aria-hidden="true"></i></div><div>About Me</div></li>
+                <li onclick="showskills()"><div><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></div><div>Skills</div></li>
+                <li onclick="showwork()"><div><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i></div><div>Works</div></li>
+                <li onclick="showcontact()"><div><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></div><div>Contact Me</div></li>
+            </ul>
+        </div>
+        <div id="main_content">
+            <div id="main_div">
+                <div id="home">
+                    <div id="intro">
+                        <h1>Hi,<br>I'm Shiva Sankari</h1>
+                        <p>FrontEnd Web Developer</p>
+                    </div>
+                    <img src="images/home_img.svg" alt="" srcset="">
+                </div>
+                <div id="aboutme">
+                    <h1>ABOUT ME</h1>
+                    <p>I am a passionate FrontEnd Web developer experienced in working with html, css, javascript, jquery, bootstrap, Reactjs, Nodejs, Mysql.I love creating beautiful static webpages maintaining the responsiveness.I am good at replicating the UI/UX designs .I am so much excited to transform my excellence into service.</p>
+                </div>
+                <div id="skills">
+                    <h1>Skills</h1>
+                    <div id="board">
+                      <div id="skill_names">
+                          <div>HTML</div>
+                          <div>CSS</div>
+                          <div>Javascript</div>
+                          <div>Jquery</div>
+                          <div>ReactJs</div>
+                          <div>NodeJs</div>
+                          <div>Mysql</div>
+                      </div>
+                      <div id="bars">
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                      </div>
+                    </div>
+                </div>
+                <div id="works">Works</div>
+                <div id="contact">Contact</div>
+
+            </div>
+        </div>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
