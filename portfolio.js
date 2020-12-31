@@ -2,7 +2,6 @@ var content =document.getElementById("main_div");
 var sidebar =document.getElementById("sidebar");
 var main_content =document.getElementById("main_content");
 var main_div =document.getElementsByClassName("section");
-var home =document.getElementById("home");
 var p=document.getElementsByTagName("p");
 var n=0;
 function showsidebar(){
