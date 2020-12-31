@@ -11,10 +11,12 @@ function showsidebar(){
     for(var i=0;i<main_div.length;i++){
         main_div[i].style.width="80%";
     }
-    main_div[1].style.width="80vw";    
+    main_div[1].style.width="80vw";
+    main_content.style.width="80vw";    
     n=1;
    }
    else{
+    main_content.style.width="100vw";
     sidebar.style.left="-20%";
     main_content.style.left="0";
     for(var i=0;i<main_div.length;i++){
