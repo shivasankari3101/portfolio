@@ -6,11 +6,13 @@ function showsidebar(){
    if(n==0){
     sidebar.style.left="0";
     main_content.style.left="20%";
+    main_content.style.width="80%";    
     n=1;
    }
    else{
     sidebar.style.left="-20%";
     main_content.style.left="0";
+    main_content.style.width="100%";
     n=0;
    }
 }
