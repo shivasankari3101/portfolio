@@ -97,6 +97,24 @@ h1{
     height: 100%;
 }
 
+.fa-chevron-right{
+    display: none;
+}
+
+.social_media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_media a{
+    color: #ff4893;
+    background-color: #ffd5d5;
+    margin: 4%;
+    padding: 2%;
+    border-radius: 50%;
+}
+
 #aboutme{
     background: url(images/About_bg.svg);
     background-size: cover;
@@ -161,23 +179,75 @@ h1{
 
 @media screen and (max-width:768px){
     #sidebar{
+        left: -20%;
+        z-index: 1;
+        transition: 0.6s;
+    }
+    .fa-chevron-right{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #ff4893;
+        color: #fff;
+        padding: 5%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        z-index: 1;
+    }
+    #menu li>div:nth-child(2){
         display: none;
     }
     #main_content{
         left: 0;
         width: 100vw;
+        transition: 0.6s;
     }
     #home{
         grid-template-columns: 100%;
-        grid-template-rows: 40% 50%;
+        grid-template-rows:35% 50% 20%;
         justify-content: center;
         align-items: flex-start;
         padding-left: 10%;
+    }
+
+    #home img{
+        padding: 7%;
+    }
+    
+    .social_media a{
+        padding:4%;
     }
     #intro h1{
         font-size: 3rem;
     }
     #intro p{
         font-size: 1.5rem;
+    }
+    #main_div>#aboutme{
+        width: 100vw;
+    }
+    #aboutme{
+        width: 100vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-gap:4%;
+        text-align: center;
+
+    }
+    #aboutme p{
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
+
+    #board>div{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    #skills{
+        padding-top: 5%;
     }
 }
