@@ -1,18 +1,28 @@
 var content =document.getElementById("main_div");
 var sidebar =document.getElementById("sidebar");
 var main_content =document.getElementById("main_content");
+var main_div =document.getElementsByClassName("section");
+var home =document.getElementById("home");
+var p=document.getElementsByTagName("p");
 var n=0;
 function showsidebar(){
    if(n==0){
     sidebar.style.left="0";
     main_content.style.left="20%";
-    main_content.style.width="80%";    
+    for(var i=0;i<main_div.length;i++){
+        main_div[i].style.width="80%";
+    }
+    main_div[1].style.width="80vw"; 
+    main_div[1].p.style.fontSize="1rem";    
     n=1;
    }
    else{
     sidebar.style.left="-20%";
     main_content.style.left="0";
-    main_content.style.width="100%";
+    for(var i=0;i<main_div.length;i++){
+        main_div[i].style.width="100%";
+    }
+    main_div[1].style.width="100vw";
     n=0;
    }
 }

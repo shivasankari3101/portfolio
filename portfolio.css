@@ -229,15 +229,17 @@ h1{
     }
     #main_div>#aboutme{
         width: 100vw;
+        height: 100vh;
     }
     #aboutme{
-        width: 100vw;
+        width: 100%;
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         grid-gap:4%;
         text-align: center;
+        overflow: hidden;
 
     }
     #aboutme p{
