@@ -1,17 +1,18 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="portfolio.css">
     </head>
     <body>
         <div id="sidebar">
             <ul id="menu">
-                <li onclick="showhome()"><div><i class="fa fa-home fa-2x" aria-hidden="true"></i></div><div>Home</div></li>
-                <li onclick="showabout()"><div><i class="fa fa-user fa-2x" aria-hidden="true"></i></div><div>About Me</div></li>
-                <li onclick="showskills()"><div><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></div><div>Skills</div></li>
-                <li onclick="showwork()"><div><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i></div><div>Works</div></li>
-                <li onclick="showcontact()"><div><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></div><div>Contact Me</div></li>
+                <li class="li" onclick="showhome()"><div><i class="fa fa-home fa-2x" aria-hidden="true"></i></div><div>Home</div></li>
+                <li class="li" onclick="showabout()"><div><i class="fa fa-user fa-2x" aria-hidden="true"></i></div><div>About Me</div></li>
+                <li class="li" onclick="showskills()"><div><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></div><div>Skills</div></li>
+                <li class="li" onclick="showwork()"><div><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i></div><div>Works</div></li>
+                <li class="li" onclick="showcontact()"><div><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></div><div>Contact Me</div></li>
             </ul>
         </div>
         <div id="main_content">
@@ -28,6 +29,7 @@
                         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </div>
                 </div>
              
@@ -85,6 +87,29 @@
                 </div>
                 <div id="works" class="section">
                     <h1>Works</h1>
+                    <div class="main_works">
+                        <div class="dot_container">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="main_project_div">
+                        <div class="main_project">
+                            <div class="project project1">
+                                <a href="#"><img src="images/Project1.svg" alt="" srcset=""></a>
+                                <h4>Javascript To-do list</h4>
+                            </div>
+                            <div class="project project2">
+                                <a href="#"><img src="images/Project2.svg" alt="" srcset=""></a>
+                                <h4>Javascript Timer</h4>
+                            </div>
+                            <div class="project project3">
+                                <a href="#"><img src="images/Project3.svg" alt="" srcset=""></a>
+                                <h4>Portfolio website</h4>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
                 <div id="contact" class="section">
                     <h1>Contact</h1>

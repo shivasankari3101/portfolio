@@ -2,8 +2,13 @@ var content =document.getElementById("main_div");
 var sidebar =document.getElementById("sidebar");
 var main_content =document.getElementById("main_content");
 var main_div =document.getElementsByClassName("section");
-var p=document.getElementsByTagName("p");
+var li=document.getElementsByClassName("li");
+var main_project=document.getElementsByClassName("main_project")[0];
+var dots=document.getElementsByClassName("dot");
 var n=0;
+showactive(0);
+showactivedot(0);
+showhome();
 function showsidebar(){
    if(n==0){
     sidebar.style.left="0";
@@ -26,23 +31,72 @@ function showsidebar(){
     n=0;
    }
 }
+function showactive(n){
+    for(var i=0;i<li.length;i++){
+        li[i].style.backgroundColor="#ff4893";
+        li[i].style.color="#fff";
+    }
+    li[n].style.backgroundColor="#ffd5d5";
+    li[n].style.color="#ff4893";
+}
+
+function showactivedot(n){
+    for(var i=0;i<dots.length;i++){
+        dots[i].style.backgroundColor="#ffd5d5";
+    }
+    dots[n].style.backgroundColor="#ff4893";
+}
 function showhome(){
     content.style.transform="translateY(0)";
     content.style.transition="0.5s";
+    main_content.style.backgroundImage="url(images/works_bg.svg)";
+    main_content.style.backgroundSize="cover";
+    showactive(0);
 }
 function showabout(){
     content.style.transform="translateY(-100%)";
     content.style.transition="0.5s";
+    main_content.style.backgroundImage="url(images/About_bg.svg)";
+    main_content.style.backgroundSize="cover";
+    showactive(1);
 }
 function showskills(){
     content.style.transform="translateY(-200%)";
     content.style.transition="0.5s";
+    main_content.style.backgroundImage="url(images/skills_bg.svg)";
+    main_content.style.backgroundSize="cover";
+    showactive(2);
 }
 function showwork(){
     content.style.transform="translateY(-300%)";
     content.style.transition="0.5s";
+    main_content.style.backgroundImage="url(images/works_bg.svg)";
+    main_content.style.backgroundSize="cover";
+    showactive(3);
 }
 function showcontact(){
     content.style.transform="translateY(-400%)";
     content.style.transition="0.5s";
+    main_content.style.backgroundImage="url(images/contact_bg.svg)";
+    main_content.style.backgroundSize="cover";
+    showactive(4);
+}
+
+$(document).on("click",".dot",function(){
+    var index=$(this).index();
+    showproject(index);
+})
+
+function showproject(n){
+    switch(n){
+        case 0:main_project.style.transform="translateX(0)";
+             showactivedot(0);               
+             break;
+        case 1:main_project.style.transform="translateX(-100%)";
+              showactivedot(1);
+              break;
+        case 2:main_project.style.transform="translateX(-200%)";
+               showactivedot(2);
+               break;
+    }
 }
