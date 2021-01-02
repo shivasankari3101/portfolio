@@ -19,6 +19,7 @@ function showsidebar(){
     }
     main_div[1].style.width="80vw";
     main_div[3].style.width="80vw";
+    main_div[4].style.width="80vw";
     main_content.style.width="80vw";  
     main_project_div.style.height="50%";
     main_project_div.style.marginTop="30%";  
@@ -31,8 +32,9 @@ function showsidebar(){
     for(var i=0;i<main_div.length;i++){
         main_div[i].style.width="100%";
     }
-    main_div[3].style.width="100vw";
     main_div[1].style.width="100vw";
+    main_div[3].style.width="100vw";
+    main_div[4].style.width="100vw";
     main_project_div.style.height="60%";
     main_project_div.style.marginTop="10%";
     n=0;
