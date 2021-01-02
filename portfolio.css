@@ -323,6 +323,22 @@ h1{
 #contact .social_media{
     width: 40%;
 }
+
+.google_form::-webkit-scrollbar {
+	width: 13px;
+  }
+  
+  /* Track */
+  .google_form::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  .google_form::-webkit-scrollbar-thumb {
+	background:rgba(0,0,0,0.25); 
+	border-radius: 10px;
+  }
 @media screen and (max-width:768px){
     #sidebar{
         left: -20%;
@@ -429,6 +445,11 @@ h1{
     
    .input-group label{
        margin-bottom: 10%;
+   }
+
+   iframe{
+       width: 100%;
+       height: 100%;
    }
 }
 
