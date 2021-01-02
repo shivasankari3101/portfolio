@@ -4,6 +4,7 @@ var main_content =document.getElementById("main_content");
 var main_div =document.getElementsByClassName("section");
 var li=document.getElementsByClassName("li");
 var main_project=document.getElementsByClassName("main_project")[0];
+var main_project_div=document.getElementsByClassName("main_project_div")[0];
 var dots=document.getElementsByClassName("dot");
 var n=0;
 showactive(0);
@@ -18,7 +19,9 @@ function showsidebar(){
     }
     main_div[1].style.width="80vw";
     main_div[3].style.width="80vw";
-    main_content.style.width="80vw";    
+    main_content.style.width="80vw";  
+    main_project_div.style.height="50%";
+    main_project_div.style.marginTop="30%";  
     n=1;
    }
    else{
@@ -30,6 +33,8 @@ function showsidebar(){
     }
     main_div[3].style.width="100vw";
     main_div[1].style.width="100vw";
+    main_project_div.style.height="60%";
+    main_project_div.style.marginTop="10%";
     n=0;
    }
 }
@@ -45,8 +50,10 @@ function showactive(n){
 function showactivedot(n){
     for(var i=0;i<dots.length;i++){
         dots[i].style.backgroundColor="#ffd5d5";
+        dots[i].style.color="rgba(0,0,0,0.35)";
     }
     dots[n].style.backgroundColor="#ff4893";
+    dots[n].style.color="#fff";
 }
 function showhome(){
     content.style.transform="translateY(0)";
