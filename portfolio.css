@@ -369,7 +369,8 @@ h1{
         padding:4%;
     }
     #intro h1{
-        font-size: 3rem;
+        padding-top: 10%;
+        font-size: 2rem;
     }
     #intro p{
         font-size: 1.5rem;
@@ -429,4 +430,11 @@ h1{
    .input-group label{
        margin-bottom: 10%;
    }
+}
+
+
+@media screen and (max-width:300px){
+    #intro h1{
+        font-size: 3rem;
+    }
 }
