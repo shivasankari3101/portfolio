@@ -88,7 +88,7 @@ function showwork(){
 function showcontact(){
     content.style.transform="translateY(-400%)";
     content.style.transition="0.5s";
-    main_content.style.backgroundImage="url(images/contact_bg.svg)";
+    main_content.style.backgroundImage="url(images/works_bg.svg)";
     main_content.style.backgroundSize="cover";
     showactive(4);
 }
